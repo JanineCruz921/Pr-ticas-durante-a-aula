@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+.listaatividade{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+li{
+    margin-left: 15px;
+    list-style: none;
+}
+
