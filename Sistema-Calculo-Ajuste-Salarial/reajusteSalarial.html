@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel= "stylesheet" href="reajusteSalarial.css">
+</head>
+
+<body>
+    <div class="divPrincipal">
+        <div class="paginaInicial">
+            <h1>Reajuste Salarial</h1>
+            <button id="botaoProximo" onclick="trocaDePagina1()">Próximo</button>
+        </div>
+        <div class="primeiraPagina">
+     <h1>Bem-vindo ao cálculo de reajuste salarial!</h1>
+     <p>O reajuste é calculado da seguinte maneira:</p>
+     <p>Salários menores ou iguais a R$ 280,00, reajuste = 20% </p>
+     <p>Salários maiores que R$ 280,00 e menores que R$ 700,00, reajuste = 15% </p>
+     <p>Salários maiores que R$ 700,00 e menores que R$ 1.500,00, reajuste = 10% </p>
+     <p>Salários meiores que R$ 1.500,00, reajuste = 5% </p>
+     <button id="botaoCalcular" onclick="trocaDePagina2()">Calcular meu aumento percentual</button>
+     <button id="botaoVoltar1" onclick="trocaDePagina0()">Voltar</button>
+        </div>
+        <div class="paginaCalculo">
+            <input id="inputUsuario" placeholder="Digite aqui o valor do seu sálario atual.">
+            <button id="botaoEnviar" onclick="calculoAumentoSalarial(), trocaDePagina3()">Enviar</button>
+            <button id="botaoVoltar2" onclick="trocaDePagina1()">Voltar</button>
+        </div>
+        <div class="paginaResultado">
+
+        </div>
+    </div>
+    <script src="reajusteSalarial.js"></script>
+</body>
+
+</html>
